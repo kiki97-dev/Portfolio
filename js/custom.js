@@ -1,24 +1,27 @@
 $(document).ready(function () {
 
     var $grid;
+    var wrap = $("#wrap");
+    var article = $("#wrap .box article");
+    var lodingbar = $(".loding_bar");
 
-    $(".loding_bar").animate({ width: "200px" }, 1000)
+    lodingbar.animate({ width: "200px" }, 1000)
 
     setTimeout(function () {
-        $(".loding_bar").addClass("on");
+        lodingbar.addClass("on");
 
         setTimeout(function () {
-            $("#wrap").css({ margin: "-100px auto 0px" })
+            wrap.css({ margin: "-100px auto 0px" })
             setTimeout(function () {
-                $("#wrap").css({ width: "150px", height: "150px" })
+                wrap.css({ width: "150px", height: "150px" })
                 setTimeout(function () {
                     $("#wrap").css({ width: "300px", height: "300px" });
-                    $("#wrap .box article").eq(0).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    $("#wrap .box article").eq(1).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    $("#wrap .box article").eq(2).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    $("#wrap .box article").eq(3).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    $("#wrap .box article").eq(4).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    $("#wrap .box article").eq(5).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(0).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(1).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(2).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(3).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(4).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.eq(5).css({ transform: "rotateY(0deg) translateZ(400px)" })
                 }, 500)
             }, 1000)
         }, 500)
