@@ -11,17 +11,24 @@ $(document).ready(function () {
         lodingbar.addClass("on");
 
         setTimeout(function () {
-            wrap.css({ margin: "-100px auto 0px" })
+            wrap.css({ margin: "-100px auto 0px" });
             setTimeout(function () {
-                wrap.css({ width: "150px", height: "150px" })
+                wrap.css({ width: "100px", height: "100px" });
+                article.eq(0).css({ transform: "rotateY(0deg) translateZ(50px)" })
+                article.eq(1).css({ transform: "rotateY(90deg) translateZ(50px)" })
+                article.eq(2).css({ transform: "rotateY(180deg) translateZ(50px)" })
+                article.eq(3).css({ transform: "rotateY(270deg) translateZ(50px)" })
+                article.eq(4).css({ transform: "rotateY(90deg) translateZ(50px)" })
+                article.eq(5).css({ transform: "rotateY(-90deg) translateZ(50px)" })
                 setTimeout(function () {
                     $("#wrap").css({ width: "300px", height: "300px" });
-                    article.eq(0).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    article.eq(1).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    article.eq(2).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    article.eq(3).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    article.eq(4).css({ transform: "rotateY(0deg) translateZ(400px)" })
-                    article.eq(5).css({ transform: "rotateY(0deg) translateZ(400px)" })
+                    article.css({ opacity: 0 });
+                    article.eq(0).css({ transform: "rotateY(0deg) translateZ(1000px)" })
+                    article.eq(1).css({ transform: "rotateY(90deg) translateZ(1000px)" })
+                    article.eq(2).css({ transform: "rotateY(180deg) translateZ(1000px)" })
+                    article.eq(3).css({ transform: "rotateY(270deg) translateZ(1000px)" })
+                    article.eq(4).css({ transform: "rotateY(90deg) translateZ(1000px)" })
+                    article.eq(5).css({ transform: "rotateY(-90deg) translateZ(1000px)" })
                 }, 500)
             }, 1000)
         }, 500)
@@ -40,7 +47,7 @@ $(document).ready(function () {
         $("body").css({ overflow: "auto" });
         $(".loding").fadeOut(1000);
 
-    }, 5000);
+    }, 4500);
 
 
     $("#gnb li a").on("click", function (e) {
