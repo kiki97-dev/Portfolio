@@ -212,3 +212,89 @@ header {
 		opacity: 1;
 	}
 }
+
+footer {
+	padding: 80px 0px;
+
+	p {
+		text-align: center;
+		font: normal 14px/1 "roboto";
+		color: #888;
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	header {
+		width: 100%;
+		padding: 80px 0px 60px;
+	
+		.inner {
+			width: 100%;
+		}
+	}
+
+	.project {
+		width: 100%;
+		padding: 0px 30px 100px;
+	
+		.wrap {
+	
+			article {
+				width: 33.3333%;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	.project {
+		.wrap {
+			article {
+				width: 50%;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		width: 100%;
+		padding: 60px 0px 40px;
+	
+		.inner {
+			width: 100%;
+	
+			h1 {
+				a {
+					font-size: 50px;
+					margin-bottom: 30px;
+	
+					span {
+						font: 400 16px/1 "roboto";
+					}
+				}
+			}
+	
+			#gnb {
+	
+				li {
+	
+					a {
+						font: 500 20px/1 "Halant";
+						margin: 0px 10px;
+					}
+				}
+			}
+		}
+	}
+	.project {
+		.wrap {
+			article {
+				width: 100%;
+			}
+		}
+	}
+
+}

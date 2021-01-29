@@ -160,4 +160,44 @@ header {
     transform: translateY(0);
     opacity: 1; }
 
+footer {
+  padding: 80px 0px; }
+  footer p {
+    text-align: center;
+    font: normal 14px/1 "roboto";
+    color: #888; }
+
+@media screen and (max-width: 1179px) {
+  header {
+    width: 100%;
+    padding: 80px 0px 60px; }
+    header .inner {
+      width: 100%; }
+
+  .project {
+    width: 100%;
+    padding: 0px 30px 100px; }
+    .project .wrap article {
+      width: 33.3333%; } }
+@media screen and (max-width: 850px) {
+  .project .wrap article {
+    width: 50%; } }
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 60px 0px 40px; }
+    header .inner {
+      width: 100%; }
+      header .inner h1 a {
+        font-size: 50px;
+        margin-bottom: 30px; }
+        header .inner h1 a span {
+          font: 400 16px/1 "roboto"; }
+      header .inner #gnb li a {
+        font: 500 20px/1 "Halant";
+        margin: 0px 10px; }
+
+  .project .wrap article {
+    width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
