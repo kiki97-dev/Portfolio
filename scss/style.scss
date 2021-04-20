@@ -167,7 +167,7 @@ header {
 
 			.inner {
 				width: 100%;
-				border-bottom: 3px solid #bbb;
+				border-bottom: 1px solid #bbb;
 
 				h2 {
 					font-family: "Noto Sans KR";
@@ -193,10 +193,22 @@ header {
 					}
 				}
 
+				a {
+					display: inline-block;
+					width: 100%;
+					img {
+						display: inline-block;
+						width: 100%;
+						margin-bottom: 16px;
+					}
+				}
+
 				img {
 					width: 100%;
 					margin-bottom: 16px;
 				}
+
+				
 			}
 		}
 

@@ -130,7 +130,7 @@ header {
       padding: 10px; }
       .project .wrap article .inner {
         width: 100%;
-        border-bottom: 3px solid #bbb; }
+        border-bottom: 1px solid #bbb; }
         .project .wrap article .inner h2 {
           font-family: "Noto Sans KR";
           font-size: 20px;
@@ -149,6 +149,13 @@ header {
             display: block;
             font-size: 14px;
             color: #888; }
+        .project .wrap article .inner a {
+          display: inline-block;
+          width: 100%; }
+          .project .wrap article .inner a img {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 16px; }
         .project .wrap article .inner img {
           width: 100%;
           margin-bottom: 16px; }
